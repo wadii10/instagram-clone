@@ -1,0 +1,15 @@
+.story {
+    background-color: #FFFFFF;
+    max-width: 580px;
+    border: 1px solid lightgray;
+    margin-bottom: 45px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-block: 20px;
+}
+
+.story__avatar {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
