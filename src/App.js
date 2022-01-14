@@ -12,6 +12,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { StoryInsta } from "./Components/StoryInsta";
 import { SuggFooter } from "./Components/SuggFooter";
 import { ListPost } from "./Components/ListPost";
+import ListSugg from "./Components/ListSugg";
 
 function App() {
   const dataPost = [
@@ -40,6 +41,21 @@ function App() {
       comment:"cute"
     }
   ];
+
+  // const dataSugg = [
+  //   {
+  //     usernameSugg:"Nejahyengui",
+  //     srcImage:"/images/avatar1.webp"
+  //   },
+  //   {
+  //     usernameSugg:"oussemaWess",
+  //     srcImage:"/images/avatar2.jpg"
+  //   },
+  //   {
+  //     usernameSugg:"salma",
+  //     srcImage:"/images/avatar3.webp"
+  //   }
+  // ];
 
   return (
     <div className="App">
@@ -92,13 +108,16 @@ function App() {
             </IconButton>
           </div>
           <div className="avatar__header">
-            <Avatar alt="Wadii" src="/static/images/avatar/1.jpg" />
+            <Avatar alt="Wadii" src="/static/images/avatar/1.jpg" 
+            sx={{ width: 24, height: 24 }} />
           </div>
         </div>
       </div>
 
       <div className="sugg__app">
+
         <SuggFooter />
+
       </div>
 
       <div className="story__post">

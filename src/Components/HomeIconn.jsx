@@ -13,9 +13,6 @@ function HomeIcon(props) {
 export default function SvgIconsSize() {
   return (
     <Box>
-
-
-
       <HomeIcon />
     </Box>
   );

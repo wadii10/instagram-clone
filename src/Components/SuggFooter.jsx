@@ -1,8 +1,25 @@
 import { Avatar, TableRow } from '@mui/material'
 import React from 'react'
+import ListSugg from './ListSugg'
 import "./SuggFooter.css"
 
 export const SuggFooter = () => {
+
+    const dataSugg = [
+        {
+          usernameSugg:"Nejahyengui",
+          srcImage:"/images/avatar1.webp"
+        },
+        {
+          usernameSugg:"oussemaWess",
+          srcImage:"/images/avatar2.jpg"
+        },
+        {
+          usernameSugg:"salma",
+          srcImage:"/images/avatar3.webp"
+        }
+      ];
+
     return (
         <div className='sugg__footer'>
             <TableRow>
@@ -31,17 +48,8 @@ export const SuggFooter = () => {
             </TableRow>
 
             <TableRow>
-                <div className="under__sugg">
-                    <Avatar
-                        className="user__avatarProp"
-                        alt="Wadii"
-                        src="/static/images/avatar/1.jpg"
-                        sx={{ width: 24, height: 24 }}
-                    />
-                    <h6>other user</h6>
-                    <button className="basculer__button"
-                        type="submit"
-                        onClick>Basculer</button>
+                <div className="under__suggList">
+                <ListSugg listSugg={dataSugg} />
                 </div>
             </TableRow>
 

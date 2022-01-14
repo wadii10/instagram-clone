@@ -55,3 +55,7 @@
   background-color: transparent;
   margin-bottom: 500px;
 }
+
+.avatar__header {
+  padding: 9px;
+}
