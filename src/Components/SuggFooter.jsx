@@ -22,7 +22,7 @@ export const SuggFooter = () => {
 
     return (
         <div className='sugg__footer'>
-            <TableRow>
+            
                 <div className="up__sugg">
                     <Avatar
                         className="user__avatar"
@@ -34,9 +34,9 @@ export const SuggFooter = () => {
                         type="submit"
                         onClick>Basculer</button>
                 </div>
-            </TableRow>
+            
 
-            <TableRow >
+            
                 <div className="sugg">
                     <div className="suggestion__proposition">
                         <h5 className='message'>Suggestions pour vous </h5>
@@ -45,26 +45,24 @@ export const SuggFooter = () => {
                             onClick>Voirtout</button>
                     </div>
                 </div>
-            </TableRow>
+            
 
-            <TableRow>
+            
                 <div className="under__suggList">
                 <ListSugg listSugg={dataSugg} />
                 </div>
-            </TableRow>
+            
 
 
-            <TableRow>
                 <div className="footer">
                     <p>À propo.sAide.Presse.API.Emplois.Confidentialité.</p>
-                    <br />
                     <p>Conditions.Lieux.Comptes principaux.Hashtags.Langue
                         Français
                     </p>
                     <br />
                     <p>© 2022 INSTAGRAM PAR META</p>
                 </div>
-            </TableRow>
+            
 
         </div>
     )
