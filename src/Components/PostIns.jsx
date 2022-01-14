@@ -3,10 +3,8 @@ import { Avatar, IconButton } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import "./PostIns.css"
 
-const PostIns = ({ username, caption, imageUrl, comment }) => {
-  const postComment = (event) => {
-
-  }
+const PostIns = ({ item }) => {
+ 
 
   return (
     <div className="post">
@@ -16,10 +14,10 @@ const PostIns = ({ username, caption, imageUrl, comment }) => {
           alt="Wadii"
           src="/static/images/avatar/1.jpg"
         />
-        <h3>{username}</h3>
+        <h3>{item.username}</h3>
       </div>
 
-      <img className="post__image" src={imageUrl} alt="" />
+      <img className="post__image" src={item.imageUrl} alt="" />
       <div className="post__likeCommentShareSave">
         <div className="like__post">
           <IconButton>
@@ -43,19 +41,18 @@ const PostIns = ({ username, caption, imageUrl, comment }) => {
         </div>
       </div>
       <h4 className="post__text">
-        <strong>{username}</strong>{caption}
+        <strong>{item.username}</strong>{item.caption}
       </h4>
       <form className="post__commentBox">
         <input
           className="post__input"
           type="text"
           placeholder="Ajouter un commentaire..."
-          value={comment}
+          value={item.comment}
         />
         <button className="post__button"
-          disabled={!comment}
           type="submit"
-          onClick={postComment}>Publier</button>
+          >Publier</button>
       </form>
 
 
